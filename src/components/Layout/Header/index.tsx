@@ -308,12 +308,12 @@ const Header = ({
               </Menu.Button>
               <Menu.Items as="div" className="dapp-menu-items">
                 <Menu.Item key={0}>
-                  <a href='https://derivable.org' target='_blank' className="dapp-menu-item" rel="noreferrer">
+                  <a href='https://derion.io' target='_blank' className="dapp-menu-item" rel="noreferrer">
                     Landing Page
                   </a>
                 </Menu.Item>
                 <Menu.Item key={5}>
-                  <a href='https://docs.derivable.org' target='_blank' className="dapp-menu-item" rel="noreferrer">
+                  <a href='https://docs.derion.io' target='_blank' className="dapp-menu-item" rel="noreferrer">
                     Docs
                   </a>
                 </Menu.Item>

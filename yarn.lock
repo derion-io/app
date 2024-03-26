@@ -1632,9 +1632,9 @@
     bech32 "1.1.4"
     ws "7.4.6"
 
-"@ethersproject/providers@https://gitpkg.now.sh/derivable-labs/ethers.js/packages/providers?v5.3.5.0":
+"@ethersproject/providers@https://gitpkg.now.sh/derion-io/ethers.js/packages/providers?v5.3.5.0":
   version "5.5.2"
-  resolved "https://gitpkg.now.sh/derivable-labs/ethers.js/packages/providers?v5.3.5.0#6ac23afcc2ad3967690d4194157ed62f41a1127e"
+  resolved "https://gitpkg.now.sh/derion-io/ethers.js/packages/providers?v5.3.5.0#6ac23afcc2ad3967690d4194157ed62f41a1127e"
   dependencies:
     "@ethersproject/abstract-provider" "^5.5.0"
     "@ethersproject/abstract-signer" "^5.5.0"
@@ -4540,9 +4540,9 @@ assign-symbols@^1.0.0:
   resolved "https://registry.yarnpkg.com/assign-symbols/-/assign-symbols-1.0.0.tgz#59667f41fadd4f20ccbc2bb96b8d4f7f78ec0367"
   integrity sha512-Q+JC7Whu8HhmTdBph/Tq59IoRtoy6KAm5zzPv00WdujX82lbAL8K7WVjne7vdCsAmbF4AYaDOPyO3k0kl8qIrw==
 
-"assisted-json-rpc-provider@git+ssh://git@github.com:derivable-labs/AssistedJsonRpcProvider.git#dev":
+"assisted-json-rpc-provider@git+ssh://git@github.com:derion-io/AssistedJsonRpcProvider.git#dev":
   version "1.0.0"
-  resolved "git+ssh://git@github.com:derivable-labs/AssistedJsonRpcProvider.git#1410f1d9a1e733c35d409f4ee79b0ca348f16718"
+  resolved "git+ssh://git@github.com:derion-io/AssistedJsonRpcProvider.git#1410f1d9a1e733c35d409f4ee79b0ca348f16718"
   dependencies:
     async-task-throttle-on-response "^1.0.1"
     ethers "^5.5.3"
@@ -5667,9 +5667,9 @@ cosmiconfig@^7.0.0:
     path-type "^4.0.0"
     yaml "^1.10.0"
 
-"create-comp@git+ssh://git@github.com:derivable-labs/create-comp.git#dev":
+"create-comp@git+ssh://git@github.com:derion-io/create-comp.git#dev":
   version "1.0.0"
-  resolved "git+ssh://git@github.com:derivable-labs/create-comp.git#93f278a82e9fdb2c36f57e14f08a17af879a31c1"
+  resolved "git+ssh://git@github.com:derion-io/create-comp.git#93f278a82e9fdb2c36f57e14f08a17af879a31c1"
   dependencies:
     "@babel/plugin-proposal-unicode-property-regex" "^7.18.6"
     "@reduxjs/toolkit" "^1.7.1"
@@ -5677,14 +5677,14 @@ cosmiconfig@^7.0.0:
     "@types/react-collapse" "^5.0.1"
     "@uniswap/v3-core" "^1.0.1"
     "@uniswap/v3-sdk" "^3.9.0"
-    assisted-json-rpc-provider "git+ssh://git@github.com:derivable-labs/AssistedJsonRpcProvider.git#dev"
+    assisted-json-rpc-provider "git+ssh://git@github.com:derion-io/AssistedJsonRpcProvider.git#dev"
     caniuse-lite "^1.0.30001576"
-    derivable-engine "git+ssh://git@github.com:derivable-labs/engine.git#dev-build"
+    derivable-engine "git+ssh://git@github.com:derion-io/engine.git#dev-build"
     ethereum-multicall "^2.15.0"
     ethers "^5.4.6"
     graphql "^15.5.0"
     graphql-request "^3.4.0"
-    leverage-slider "git+ssh://git@github.com:derivable-labs/leverage-slider-comp.git"
+    leverage-slider "git+ssh://git@github.com:derion-io/leverage-slider-comp.git"
     lodash "^4.17.21"
     moment "^2.29.4"
     rc-slider "^10.0.1"
@@ -6255,16 +6255,16 @@ dequal@^2.0.3:
   resolved "https://registry.yarnpkg.com/dequal/-/dequal-2.0.3.tgz#2644214f1997d39ed0ee0ece72335490a7ac67be"
   integrity sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==
 
-"derivable-engine@git+ssh://git@github.com:derivable-labs/engine.git#dev-build":
+"derivable-engine@git+ssh://git@github.com:derion-io/engine.git#dev-build":
   version "1.0.0"
-  resolved "git+ssh://git@github.com:derivable-labs/engine.git#9ed07d29fa1c0160c26b69771977a0923250c591"
+  resolved "git+ssh://git@github.com:derion-io/engine.git#9ed07d29fa1c0160c26b69771977a0923250c591"
   dependencies:
-    "@ethersproject/providers" "https://gitpkg.now.sh/derivable-labs/ethers.js/packages/providers?v5.3.5.0"
+    "@ethersproject/providers" "https://gitpkg.now.sh/derion-io/ethers.js/packages/providers?v5.3.5.0"
     "@zoltu/ethereum-crypto" "^2.3.0"
     "@zoltu/ethereum-fetch-json-rpc" "^13.1.4"
     "@zoltu/ethereum-types" "^9.0.4"
     "@zoltu/rlp-encoder" "^2.0.6"
-    assisted-json-rpc-provider "git+ssh://git@github.com:derivable-labs/AssistedJsonRpcProvider.git#dev"
+    assisted-json-rpc-provider "git+ssh://git@github.com:derion-io/AssistedJsonRpcProvider.git#dev"
     canonical-weth "^1.4.0"
     dotenv "^16.3.1"
     ethereum-multicall "^2.15.0"
@@ -9847,9 +9847,9 @@ leven@^3.1.0:
   resolved "https://registry.yarnpkg.com/leven/-/leven-3.1.0.tgz#77891de834064cccba82ae7842bb6b14a13ed7f2"
   integrity sha512-qsda+H8jTaUaN/x5vzW2rzc+8Rw4TAQ/4KjB46IwK5VH+IlVeeeje/EoZRpiXvIqjFgK84QffqPztGI3VBLG1A==
 
-"leverage-slider@git+ssh://git@github.com:derivable-labs/leverage-slider-comp.git":
+"leverage-slider@git+ssh://git@github.com:derion-io/leverage-slider-comp.git":
   version "1.0.0"
-  resolved "git+ssh://git@github.com:derivable-labs/leverage-slider-comp.git#2a2edba3bde627092e2f3f789ecaff8a62e14bc4"
+  resolved "git+ssh://git@github.com:derion-io/leverage-slider-comp.git#2a2edba3bde627092e2f3f789ecaff8a62e14bc4"
   dependencies:
     "@reduxjs/toolkit" "^1.7.1"
     "@types/lodash" "^4.14.186"
@@ -14309,9 +14309,9 @@ tr46@~0.0.3:
   resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
   integrity sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==
 
-"trade-comp@git+ssh://git@github.com:derivable-labs/trade-comp.git#dev":
+"trade-comp@git+ssh://git@github.com:derion-io/trade-comp.git#dev":
   version "1.0.0"
-  resolved "git+ssh://git@github.com:derivable-labs/trade-comp.git#8b0a9c27bd8eed5cf21920eca3de45463dd2af28"
+  resolved "git+ssh://git@github.com:derion-io/trade-comp.git#8b0a9c27bd8eed5cf21920eca3de45463dd2af28"
   dependencies:
     "@reduxjs/toolkit" "^1.7.1"
     "@types/desmos" "^1.6.0"
@@ -14321,16 +14321,16 @@ tr46@~0.0.3:
     "@uniswap/v3-core" "^1.0.1"
     "@uniswap/v3-sdk" "^3.9.0"
     antd "^5.8.4"
-    assisted-json-rpc-provider "git+ssh://git@github.com:derivable-labs/AssistedJsonRpcProvider.git#dev"
+    assisted-json-rpc-provider "git+ssh://git@github.com:derion-io/AssistedJsonRpcProvider.git#dev"
     caniuse-lite "^1.0.30001434"
-    derivable-engine "git+ssh://git@github.com:derivable-labs/engine.git#dev-build"
+    derivable-engine "git+ssh://git@github.com:derion-io/engine.git#dev-build"
     desmos-react "^1.2.0"
     ethereum-multicall "^2.15.0"
     ethers "^5.4.6"
     graphql "^15.5.0"
     graphql-request "^3.4.0"
     html-to-image "^1.11.11"
-    leverage-slider "git+ssh://git@github.com:derivable-labs/leverage-slider-comp.git"
+    leverage-slider "git+ssh://git@github.com:derion-io/leverage-slider-comp.git"
     lodash "^4.17.21"
     moment "^2.29.4"
     move-decimal-point "^0.0.4"
@@ -14913,9 +14913,9 @@ web-vitals@^2.1.4:
   resolved "https://registry.yarnpkg.com/web-vitals/-/web-vitals-2.1.4.tgz#76563175a475a5e835264d373704f9dde718290c"
   integrity sha512-sVWcwhU5mX6crfI5Vd2dC4qchyTqxV8URinzt25XqVh+bHEPGH4C3NPrNionCP7Obx59wrYEbNlw4Z8sjALzZg==
 
-"web3-react-modal@https://github.com/derivable-labs/web3-react-modal.git":
+"web3-react-modal@https://github.com/derion-io/web3-react-modal.git":
   version "1.0.0"
-  resolved "https://github.com/derivable-labs/web3-react-modal.git#07cfa1f27353fd858a9a2b66aa996828702a39d9"
+  resolved "https://github.com/derion-io/web3-react-modal.git#07cfa1f27353fd858a9a2b66aa996828702a39d9"
 
 webidl-conversions@^3.0.0:
   version "3.0.1"

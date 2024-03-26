@@ -24,7 +24,7 @@
     "@web3-react/walletconnect-v2": "^8.3.7",
     "assert": "^2.0.0",
     "buffer": "^6.0.3",
-    "create-comp": "git+ssh://git@github.com:derivable-labs/create-comp.git#dev",
+    "create-comp": "git+ssh://git@github.com:derion-io/create-comp.git#dev",
     "crypto": "^1.0.1",
     "crypto-browserify": "^3.12.0",
     "crypto-js": "3.1.9-1",
@@ -42,11 +42,11 @@
     "sass": "^1.55.0",
     "stream-browserify": "^3.0.0",
     "stream-http": "^3.2.0",
-    "trade-comp": "git+ssh://git@github.com:derivable-labs/trade-comp.git#dev",
+    "trade-comp": "git+ssh://git@github.com:derion-io/trade-comp.git#dev",
     "typescript": "^4.8.4",
     "url": "^0.11.0",
     "web-vitals": "^2.1.4",
-    "web3-react-modal": "https://github.com/derivable-labs/web3-react-modal.git"
+    "web3-react-modal": "https://github.com/derion-io/web3-react-modal.git"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -54,8 +54,8 @@
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject",
     "delock": "sed -i '/resolved.*derivable.*/d' yarn.lock",
-    "deploy": "cp -r ./build/images ./build/icons ./build/static build/index.html ../derivable-labs.github.io/docs/;",
-    "deploy-backward": "cp build/index.html ../derivable-labs.github.io/docs/trade/; cp build/index.html ../derivable-labs.github.io/docs/trade/exposure/; cp build/index.html ../derivable-labs.github.io/docs/trade/swap/; cp build/index.html ../derivable-labs.github.io/docs/pools/; cp build/index.html ../derivable-labs.github.io/docs/exposure/; cp build/index.html ../derivable-labs.github.io/docs/swap/;"
+    "deploy": "cp -r ./build/images ./build/icons ./build/static build/index.html ../derion-io.github.io/docs/;",
+    "deploy-backward": "cp build/index.html ../derion-io.github.io/docs/trade/; cp build/index.html ../derion-io.github.io/docs/trade/exposure/; cp build/index.html ../derion-io.github.io/docs/trade/swap/; cp build/index.html ../derion-io.github.io/docs/pools/; cp build/index.html ../derion-io.github.io/docs/exposure/; cp build/index.html ../derion-io.github.io/docs/swap/;"
   },
   "eslintConfig": {
     "extends": [

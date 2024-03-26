@@ -266,7 +266,7 @@ const Dashboard = () => {
             <div className='section__content'>
             <iframe
               src="https://www.youtube.com/embed/0U1kCfnYalI?rel=0"
-              title="Derivable: Trading Guide"
+              title="Derion: Trading Guide"
               allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             />

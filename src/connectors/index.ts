@@ -30,7 +30,7 @@ export const [web3CoinbaseWallet, web3CoinbaseWalletHooks] = initializeConnector
       actions,
       options: {
         url: RPC_URLS[DEFAULT_CHAIN],
-        appName: 'Derivable',
+        appName: 'Derion',
         appLogoUrl: '',
         reloadOnDisconnect: false,
       },
