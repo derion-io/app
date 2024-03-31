@@ -200,8 +200,8 @@ const Header = ({
         >
           {
             width &&
-            <img width={100} src={isSmallPhone ? '/icons/logo.svg' : 'icons/small-logo.svg'} alt=""
-                 className={isPhone ? (isSmallPhone ? 'logo-hero-image' : 'logo-image') : ''}/>
+            <img src={isSmallPhone ? '/icons/logo.svg' : 'icons/logo.horizon.svg'} alt=""
+                 className={isPhone ? (isSmallPhone ? 'logo-hero-image' : 'logo-image') : 'logo-horizon-image'}/>
           }
           {/* <span className="tooltiptext">TOGGLE PLAY MODE</span> */}
         </div>
