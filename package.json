@@ -1,5 +1,5 @@
 {
-  "name": "derivable-interface",
+  "name": "derion-interface",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -53,7 +53,7 @@
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject",
-    "delock": "sed -i '/resolved.*derivable.*/d' yarn.lock",
+    "delock": "sed -i '/resolved.*derion.*/d' yarn.lock",
     "deploy": "cp -r ./build/images ./build/icons ./build/static build/index.html ../derion-io.github.io/docs/;",
     "deploy-backward": "cp build/index.html ../derion-io.github.io/docs/trade/; cp build/index.html ../derion-io.github.io/docs/trade/exposure/; cp build/index.html ../derion-io.github.io/docs/trade/swap/; cp build/index.html ../derion-io.github.io/docs/pools/; cp build/index.html ../derion-io.github.io/docs/exposure/; cp build/index.html ../derion-io.github.io/docs/swap/;"
   },
