@@ -49,7 +49,7 @@
     border: 1px solid;
     border-radius: 5px;
     padding: 3px 4px 2px 4px;
-    margin-left: 3px;
+    margin-left: 2px;
 
     @include respond(phone) {
       position: absolute;
@@ -57,6 +57,7 @@
       border-radius: 4px;
       transform: translate(-2rem, -2rem);
       z-index: 10;
+      margin-left: 10px;
     }
     @include respond(small-phone){
       transform: translate(-1rem, -0.5rem);
