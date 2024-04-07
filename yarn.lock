@@ -14321,7 +14321,7 @@ tr46@~0.0.3:
 
 "trade-comp@git+ssh://git@github.com:derion-io/trade-comp.git#dev":
   version "1.0.0"
-  resolved "git+ssh://git@github.com:derion-io/trade-comp.git#6964c50ca6a010e3b7584cc5fab94338724a5bfd"
+  resolved "git+ssh://git@github.com:derion-io/trade-comp.git#1c0f8cfedfa9568bb97027aefdad84bbdd26b99e"
   dependencies:
     "@reduxjs/toolkit" "^1.7.1"
     "@types/desmos" "^1.6.0"
