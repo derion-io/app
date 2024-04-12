@@ -92,9 +92,13 @@ const Header = ({
 
   useEffect(() => {
     const searchString = window.location.hash.split('?').length === 2 ? window.location.hash.split('?')[1] : ''
-    const chainInUrl = new URLSearchParams('?' + searchString).get('chain') || ''
+    const queryChain = new URLSearchParams('?' + searchString).get('chain') || ''
     const chainIdToSwitch = Object.values(NETWORK_SUPPORTED).find((net: any) => {
-      return net.chainId === chainInUrl || net.key?.toLowerCase() === chainInUrl?.toLowerCase() || net.alias?.toLowerCase() === chainInUrl?.toLowerCase()
+      return [
+        net.chainId,
+        net.key?.toLowerCase(),
+        net.alias?.toLowerCase(),
+      ].includes(queryChain.toLowerCase())
     })?.chainId || null
 
     if (chainId && chainIdToSwitch && chainId !== Number(chainIdToSwitch) && isInitChain === true) {
