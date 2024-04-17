@@ -43,7 +43,7 @@ const Header = ({
   const [visibleWalletModal, setVisibleWalletModal] = useState<boolean>(false)
   const [visibleNav, setVisibleNav] = useState<boolean>(false)
   const {login} = useAuth()
-  const [isInitChain, setIsInitChain] = useState<boolean | null>( null)
+  
   const [playMode, setPlayMode] = useState<boolean>(false)
   const isPhone = width && width < 768
   const isSmallPhone = isPhone && width < 400 && width > 300
@@ -80,28 +80,19 @@ const Header = ({
   //   }
   //   return
   // }, [activate, active, error])
-  useEffect(() => {
-    if(chainId && NETWORK_SUPPORTED[chainId]) {
-      if(isInitChain === null) {
-        setIsInitChain(true)
-      } else if(isInitChain === true) {
-        setIsInitChain(false)
-      }
-    }
-  },[chainId])
 
   useEffect(() => {
     const searchString = window.location.hash.split('?').length === 2 ? window.location.hash.split('?')[1] : ''
-    const queryChain = new URLSearchParams('?' + searchString).get('chain') || ''
+    const chainInUrl = new URLSearchParams('?' + searchString).get('chain') || ''
     const chainIdToSwitch = Object.values(NETWORK_SUPPORTED).find((net: any) => {
       return [
         net.chainId,
         net.key?.toLowerCase(),
         net.alias?.toLowerCase(),
-      ].includes(queryChain.toLowerCase())
+      ].includes(chainInUrl.toLowerCase())
     })?.chainId || null
 
-    if (chainId && chainIdToSwitch && chainId !== Number(chainIdToSwitch) && isInitChain === true) {
+    if (chainId && chainIdToSwitch && chainId !== Number(chainIdToSwitch)) {
       toast.info(<div>
         <div>Wrong network</div>
         <a
@@ -118,19 +109,7 @@ const Header = ({
     } else {
       setChainIdDisplay(chainIdToSwitch || DEFAULT_CHAIN)
     }
-  }, [chainId, isInitChain])
-
-  useEffect(() => {
-    if (chainId && NETWORK_SUPPORTED[chainId] && isInitChain === false) {
-      let searchParams = new URLSearchParams(location.search);
-      //@ts-ignore
-      searchParams.set('chain', NETWORK_SUPPORTED[chainId.toString() || ''].key);
-      history.push({
-        pathname: location.pathname,
-        search: searchParams.toString()
-      })
-    }
-  },[chainId, isInitChain])
+  }, [chainId])
 
   const menus = useMemo(() => {
     const result: { name: string, path: string, menuLink?: string }[] = []
@@ -175,15 +154,15 @@ const Header = ({
       //@ts-ignore
       toast.success('Connected to ' + CHAINS[chainId])
 
-      // if (chainId) {
-      //   let searchParams = new URLSearchParams(location.search);
-      //   //@ts-ignore
-      //   searchParams.set('chain', NETWORK_SUPPORTED[chainId.toString() || ''].key);
-      //   history.push({
-      //     pathname: location.pathname,
-      //     search: searchParams.toString()
-      //   })
-      // }
+      if (chainId) {
+        let searchParams = new URLSearchParams(location.search);
+        //@ts-ignore
+        searchParams.set('chain', NETWORK_SUPPORTED[chainId.toString() || ''].key);
+        history.push({
+          pathname: location.pathname,
+          search: searchParams.toString()
+        })
+      }
 
       //@ts-ignore
       return CHAINS[chainId]
