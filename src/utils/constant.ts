@@ -72,6 +72,7 @@ export const NETWORK_SUPPORTED: { [chainId: number]: any } = {
     name: 'BSC',
     fullname: 'BNB Smart Chain',
     key: 'bnb',
+    alias: 'bsc',
     logo: '56.svg',
     explorer: "https://bscscan.com",
     nativeTokenSymbol: 'ETH',
