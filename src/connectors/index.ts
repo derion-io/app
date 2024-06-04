@@ -62,6 +62,12 @@ export const [walletConnectV2, walletConnectV2Hooks] = initializeConnector<Walle
           // },
           walletImages: undefined,
         },
+        metadata: {
+          name: 'Derion',
+          description: 'Derion',
+          url: 'https://app.derion.io',
+          icons: [ 'https://avatars.githubusercontent.com/u/110451741' ],
+        },
       },
       onError,
     }),
