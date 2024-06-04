@@ -1630,9 +1630,9 @@
     bech32 "1.1.4"
     ws "7.4.6"
 
-"@ethersproject/providers@https://gitpkg.now.sh/derivable-labs/ethers.js/packages/providers?v5.3.5.0":
+"@ethersproject/providers@https://gitpkg.now.sh/derion-io/ethers.js/packages/providers?v5.3.5.0":
   version "5.5.2"
-  resolved "https://gitpkg.now.sh/derivable-labs/ethers.js/packages/providers?v5.3.5.0#6ac23afcc2ad3967690d4194157ed62f41a1127e"
+  resolved "https://gitpkg.now.sh/derion-io/ethers.js/packages/providers?v5.3.5.0#6ac23afcc2ad3967690d4194157ed62f41a1127e"
   dependencies:
     "@ethersproject/abstract-provider" "^5.5.0"
     "@ethersproject/abstract-signer" "^5.5.0"
@@ -4525,16 +4525,6 @@ assign-symbols@^1.0.0:
     lodash "^4.17.21"
     node-fetch "2"
 
-"assisted-json-rpc-provider@git+ssh://git@github.com:derivable-labs/AssistedJsonRpcProvider.git#dev":
-  version "1.0.0"
-  uid d5fa3e9cda40f39e526d44c93f301f8b7273812d
-  resolved "git+ssh://git@github.com:derivable-labs/AssistedJsonRpcProvider.git#d5fa3e9cda40f39e526d44c93f301f8b7273812d"
-  dependencies:
-    async-task-throttle-on-response "^1.0.1"
-    ethers "^5.5.3"
-    lodash "^4.17.21"
-    node-fetch "2"
-
 ast-types-flow@^0.0.8:
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/ast-types-flow/-/ast-types-flow-0.0.8.tgz#0a85e1c92695769ac13a428bb653e7538bea27d6"
@@ -5643,7 +5633,7 @@ cosmiconfig@^7.0.0:
 
 "create-comp@git+ssh://git@github.com:derion-io/create-comp.git#dev":
   version "1.0.0"
-  resolved "git+ssh://git@github.com:derion-io/create-comp.git#d309ee57ca4f056febedb90739a9c31adf3dfcb3"
+  resolved "git+ssh://git@github.com:derion-io/create-comp.git#b0cf2a1b0ff07379a79af3616fa9373e13359d36"
   dependencies:
     "@babel/plugin-proposal-unicode-property-regex" "^7.18.6"
     "@reduxjs/toolkit" "^1.7.1"
@@ -6253,14 +6243,14 @@ dequal@^2.0.3:
 
 "derivable-engine@git+ssh://git@github.com:derion-io/engine.git#dev-build":
   version "1.0.0"
-  resolved "git+ssh://git@github.com:derion-io/engine.git#8eebd842a874764d882010e5abf118137d2204e6"
+  resolved "git+ssh://git@github.com:derion-io/engine.git#440ccc3ccccbec1a663644293005ccaae869994e"
   dependencies:
-    "@ethersproject/providers" "https://gitpkg.now.sh/derivable-labs/ethers.js/packages/providers?v5.3.5.0"
+    "@ethersproject/providers" "https://gitpkg.now.sh/derion-io/ethers.js/packages/providers?v5.3.5.0"
     "@zoltu/ethereum-crypto" "^2.3.0"
     "@zoltu/ethereum-fetch-json-rpc" "^13.1.4"
     "@zoltu/ethereum-types" "^9.0.4"
     "@zoltu/rlp-encoder" "^2.0.6"
-    assisted-json-rpc-provider "git+ssh://git@github.com:derivable-labs/AssistedJsonRpcProvider.git#dev"
+    assisted-json-rpc-provider "git+ssh://git@github.com:derion-io/AssistedJsonRpcProvider.git#dev"
     canonical-weth "^1.4.0"
     dotenv "^16.3.1"
     ethereum-multicall "^2.15.0"
@@ -13721,7 +13711,7 @@ string-natural-compare@^3.0.1:
   resolved "https://registry.yarnpkg.com/string-natural-compare/-/string-natural-compare-3.0.1.tgz#7a42d58474454963759e8e8b7ae63d71c1e7fdf4"
   integrity sha512-n3sPwynL1nwKi3WJ6AIsClwBMa0zTi54fn2oLU6ndfTSIO05xaznjSf15PcBZU6FNWbmN5Q6cxT4V5hGvB4taw==
 
-"string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0, string-width@^4.2.0:
+"string-width-cjs@npm:string-width@^4.2.0":
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -13746,6 +13736,15 @@ string-width@^2.0.0:
   dependencies:
     is-fullwidth-code-point "^2.0.0"
     strip-ansi "^4.0.0"
+
+string-width@^4.1.0, string-width@^4.2.0:
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
+  integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
+  dependencies:
+    emoji-regex "^8.0.0"
+    is-fullwidth-code-point "^3.0.0"
+    strip-ansi "^6.0.1"
 
 string-width@^5.0.1, string-width@^5.1.2:
   version "5.1.2"
@@ -13825,7 +13824,7 @@ stringify-object@^3.3.0:
     is-obj "^1.0.1"
     is-regexp "^1.0.0"
 
-"strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+"strip-ansi-cjs@npm:strip-ansi@^6.0.1":
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
@@ -13845,6 +13844,13 @@ strip-ansi@^4.0.0:
   integrity sha512-4XaJ2zQdCzROZDivEVIDPkcQn8LMFSa8kj8Gxb/Lnwzv9A8VctNZ+lfivC/sV3ivW8ElJTERXZoPBRrZKkNKow==
   dependencies:
     ansi-regex "^3.0.0"
+
+strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
+  integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
+  dependencies:
+    ansi-regex "^5.0.1"
 
 strip-ansi@^7.0.1:
   version "7.1.0"
@@ -14289,7 +14295,7 @@ tr46@~0.0.3:
 
 "trade-comp@git+ssh://git@github.com:derion-io/trade-comp.git#dev":
   version "1.0.0"
-  resolved "git+ssh://git@github.com:derion-io/trade-comp.git#1c79347abdfd7de3124256d9c93078a228c9bc61"
+  resolved "git+ssh://git@github.com:derion-io/trade-comp.git#98630dd72a8c402c9a9f86cbcc91c3ec755cfbd8"
   dependencies:
     "@reduxjs/toolkit" "^1.7.1"
     "@types/desmos" "^1.6.0"
@@ -15358,7 +15364,7 @@ workbox-window@6.6.1:
     "@types/trusted-types" "^2.0.2"
     workbox-core "6.6.1"
 
-"wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+"wrap-ansi-cjs@npm:wrap-ansi@^7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
@@ -15379,6 +15385,15 @@ wrap-ansi@^6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-6.2.0.tgz#e9393ba07102e6c91a3b221478f0257cd2856e53"
   integrity sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==
+  dependencies:
+    ansi-styles "^4.0.0"
+    string-width "^4.1.0"
+    strip-ansi "^6.0.0"
+
+wrap-ansi@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
+  integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
   dependencies:
     ansi-styles "^4.0.0"
     string-width "^4.1.0"
