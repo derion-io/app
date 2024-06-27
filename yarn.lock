@@ -5637,7 +5637,7 @@ crc-32@^1.2.0:
 
 "create-comp@git+ssh://git@github.com:derion-io/create-comp.git#dev":
   version "1.0.0"
-  resolved "git+ssh://git@github.com:derion-io/create-comp.git#3e4fd62c606bfb378c98a3c7fcd243ec43b2aa1a"
+  resolved "git+ssh://git@github.com:derion-io/create-comp.git#e85df86c95d8a89fbdfb144eee96d3f0196304b2"
   dependencies:
     "@babel/plugin-proposal-unicode-property-regex" "^7.18.6"
     "@reduxjs/toolkit" "^1.7.1"
@@ -6242,7 +6242,7 @@ dequal@^2.0.3:
 
 "derivable-engine@git+ssh://git@github.com:derion-io/engine.git#dev-build":
   version "1.0.0"
-  resolved "git+ssh://git@github.com:derion-io/engine.git#34d101e9ce13f096bfd2992ff0658d8ad58c6fc1"
+  resolved "git+ssh://git@github.com:derion-io/engine.git#c0922f615fc48091a2930cfc5a0d9c12aedbf3f2"
   dependencies:
     "@ethersproject/providers" "https://gitpkg.now.sh/derion-io/ethers.js/packages/providers?v5.3.5.0"
     "@zoltu/ethereum-crypto" "^2.3.0"
@@ -14208,7 +14208,7 @@ tr46@~0.0.3:
 
 "trade-comp@git+ssh://git@github.com:derion-io/trade-comp.git#dev":
   version "1.0.0"
-  resolved "git+ssh://git@github.com:derion-io/trade-comp.git#b1e8092fdf286fa53f3e4583d3fc7d4091e530d8"
+  resolved "git+ssh://git@github.com:derion-io/trade-comp.git#4fb1e550357095f028a2f5799c88714cfed5d702"
   dependencies:
     "@reduxjs/toolkit" "^1.7.1"
     "@types/desmos" "^1.6.0"
